@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+    <title>
+        Build a Survey Form using HTML and CSS
+    </title>
+	<link rel="stylesheet" type="text/css" href="app.css">
+  <link rel="shortcut icon" href="#" />
+</head>
+  
+<body>
+    <h1>UET Survey Form</h1>
+  
+    <!-- Create Form -->
+    <form id="form" method="POST" action="/">
+ 
+        <!-- Details -->
+		<div class="form-control">
+            <label for="name" id="label-name">
+                Name
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="name"
+                   placeholder="Enter your name"
+                   name = "name" 
+                   required/>
+        </div>
+  
+        <div class="form-control">
+            <label for="email" id="label-email">
+                Email
+            </label>
+ 
+            <!-- Input Type Email-->
+            <input type="email"
+                   id="email"
+                   placeholder="Enter your email"
+                   name="email"
+                   required />
+        </div>
+  
+        <div class="form-control">
+            <label for="age" id="label-age">
+                Age
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="age"
+                   placeholder="Enter your age" 
+                   name="age"
+                   required/>
+        </div>
+		
+		<div class="form-control">
+			<label for="role" id="label-role">Which option best describes you?</label>
+			 
+			<!-- Dropdown options -->
+			<select name="role" id="role">
+                <option value="">-Select-</option>
+				<option value="student">Student</option>
+				<option value="intern">Intern</option>
+				<option value="fresher">Fresher</option>
+				<option value="junior">Junior</option>
+				<option value="other">Other</option>
+			</select>
+      <p style="color: red" id="show"></p>
+		</div>
+		
+		<div class="form-control">
+			<label>
+				Would you recommed UET
+				to a friend?
+			</label>
+		
+			<!-- Input Type Radio Button -->
+			<label for="recommed-1">
+				<input type="radio"
+					   id="recommed-1"
+					   name="recommed" value="Yes">Yes</input>
+			</label>
+			<label for="recommed-2">
+				<input type="radio"
+					   id="recommed-2"
+					   name="recommed" value="No">No</input>
+			</label>
+			<label for="recommed-3">
+				<input type="radio"
+					   id="recommed-3"
+					   name="recommed" value="Maybe">Maybe</input>
+			</label>
+		</div>
+		
+		<div class="form-control">
+			<label>Languages and Frameworks known
+				<small>(Check all that apply)</small>
+			</label>
+			<!-- Input Type Checkbox -->
+			<label for="inp-1">
+				<input id="inp-1" type="checkbox"
+					   name="inp" value="C">C</input></label>
+			<label for="inp-2">
+				<input id="inp-2" type="checkbox"
+					   name="inp" value="C++">C++</input></label>
+			<label for="inp-3">
+				<input id="inp-3" type="checkbox"
+					   name="inp" value="C#">C#</input></label>
+			<label for="inp-4">
+				<input id="inp-4"type="checkbox"
+					   name="inp" value="Java">Java</input></label>
+			<label for="inp-5">
+				<input id="inp-5" type="checkbox"
+					   name="inp" value="Python">Python</input></label>
+			<label for="inp-6">
+				<input id="inp-6" type="checkbox"
+					   name="inp" value="JavaScript">JavaScript</input></label>
+			<label for="inp-7">
+				<input id="inp-7" type="checkbox"
+					   name="inp" value="React">React</input></label>
+			<label for="inp-8">
+				<input id="inp-8" type="checkbox"
+					   name="inp" value="Angular">Angular</input></label>
+			
+		</div>
+		
+		<div class="form-control">
+			<label for="comment">
+				Any comments or suggestions
+			</label>
+			<!-- multi-line text input control -->
+			<textarea name="comment" id="comment"
+				placeholder="Enter your comment here">
+			</textarea>
+		</div>
+        <button type="submit" value="submit">
+            Submit
+        </button>
+    </form>
+    <script type="text/javascript" src=""></script>
+</body>
+</html>
